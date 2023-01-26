@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción</title>
+    <link rel="icon" href="img/cactuICO.ico" type="image/x-icon">
+    <link href="css/estilos.css" rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor_global" id="contenedor">
+        <header class="header">
+            <div class="contenedor-logo">
+                <button id="boton-menu" class="boton-menu"><img src="img/cactusContacto1.png" class="planta"></button>
+            </div>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="menuHorizontal">
+                <a href="index.html">Destacados</a>
+                <a href="suscripcion.html">Suscripción</a>
+                <a href="deinterior.html">De interior</a>
+                <a href="cactus.html">Cactus</a>
+                <a href="contacto.html">Contacto</a>
+                <div class="priv">
+                    <a href="PanelAdministracion.html" >Panel de administración</a>
+                </div>
+                
+                <a href="#" class="avatar"><img src="img/avatar.png" class="user"></a>
+            </nav>
+        </header>
+        <main class="main">
+                <div class="suscrip">
+                    <h1>Suscribite a nuestras redes</h1>
+                </div>
+                <form action="" target="_blank" class="formulario" id="formulario">                        
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="txtNombre" class="formulario__label">Nombre y apellido: </label> 
+                        <div class="formulario__grupo" id="grupo__nombre">
+                            <input type=”text” name="txtNombre" placeholder="Ingrese su nombre..." class="formulario__input" id="txtNombre">
+                        </div>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="txtUsuario" class="formulario__label">Usuario:</label>
+                        <div class="formulario__grupo" id="grupo__nombre">
+                            <input type="text" name="txtUsuario" id="txtUsuario" class="form-control" placeholder="Mínimo cinco digitos y máximo ocho digitos"> <br> 
+                        </div>  
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="txtMail" class="formulario__label">E-Mail: </label>
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <input type=”email” name="txtMail" placeholder="Ingrese su email..." class="form-control" id="txtMail"> 
+                        </div>
+                    </div>
+
+                    <label for="txtComentario">Dejanos tu comentario:</label> <br>
+                    <textarea name="txtComentario" id="txtComentario" cols="68" rows="5"></textarea> <br>
+
+                    <br><br>
+                    <input type="reset" value="Borrar" class="buttonBorrarJ">
+                    <input type="submit" value="Suscribirme" class="btn btn-success" onclick="mix()" >
+                
+                </form>
+        </main>
+    </div>
+
+    
+
+    <footer class="pie">
+        <div class="contenido_pie">
+            <p>Copyright 2022 © Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="/Backend/js/create.js"></script>
+    <script src="https://kit.fontawesome.com/f7a2947fd3.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
