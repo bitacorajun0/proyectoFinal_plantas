@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div v-else>
-                        <a href="/Backend/create.html" class="btn btn-success">Nuevo</a>
+                        <a href="/create.html" class="btn btn-success">Nuevo</a>
                         <br><br>
                         <table class="table table-striped table-responsive">
                             <tr>
@@ -78,7 +78,7 @@
                                 <td>{{producto.mail}}</td>
                                 <td>{{producto.comentario}}</td>
                                 <td>
-                                    <a :href="'/Backend/update.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&usuario='+producto.usuario+'&mail='+producto.mail+ '&comentario=' +producto.comentario "
+                                    <a :href="'/update.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&usuario='+producto.usuario+'&mail='+producto.mail+ '&comentario=' +producto.comentario "
                                         class="btn btn-primary">Modificar</a>
                                     <button v-on:click="eliminar(producto.id)" class="btn btn-danger">Eliminar</button>
                                 </td>
@@ -89,10 +89,10 @@
         </main>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="/Backend/js/main.js"></script>
+    <script src="/js/mainBack.js"></script>
 
-    <script src="/Backend/js/create.js"></script>
-    <script src="/Backend/js/update.js"></script>
+    <script src="/js/create.js"></script>
+    <script src="/js/update.js"></script>
 
     <script src="https://kit.fontawesome.com/f7a2947fd3.js" crossorigin="anonymous"></script>
 
